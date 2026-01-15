@@ -1414,11 +1414,8 @@ async def command_error(ctx, error):
         )
         await ctx.send(embed=embed)
 
-from keep_alive import keep_alive
 
-keep_alive()  # call this BEFORE bot.run()
 
-        
 TOKEN = os.getenv('DISCORD_TOKEN')
 if TOKEN:
     bot.run(TOKEN)
